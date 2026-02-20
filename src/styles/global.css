@@ -175,6 +175,14 @@ html[data-theme="dark"] {
   z-index: -1;
 }
 
+.gradient-border:hover::before {
+  opacity: 0;
+}
+
+.gradient-border:hover {
+  border: 2px solid var(--accent);
+}
+
 /* Glow effects */
 .glow-accent {
   box-shadow: 0 0 30px var(--accent-glow);
