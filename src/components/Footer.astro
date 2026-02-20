@@ -1,6 +1,5 @@
 ---
 import Hr from "./Hr.astro";
-import Socials from "./Socials.astro";
 import { SITE } from "@/config";
 
 export interface Props {
@@ -12,14 +11,9 @@ const { noMarginTop = false } = Astro.props;
 
 <footer class:list={["w-full", { "mt-auto": !noMarginTop }]}>
   <Hr noPadding />
-  <div
-    class="flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4"
-  >
-    <Socials centered />
-    <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
-      <span class="text-sm opacity-80">
-        © {new Date().getFullYear()} {SITE.title}
-      </span>
-    </div>
+  <div class="flex flex-col items-center justify-center py-6 sm:py-4">
+    <span class="text-sm text-muted">
+      © {new Date().getFullYear()} {SITE.title}. Alle rettigheder forbeholdes.
+    </span>
   </div>
 </footer>
