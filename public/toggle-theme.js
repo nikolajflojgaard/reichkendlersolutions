@@ -31,8 +31,8 @@ function getPreferredTheme() {
     return currentTheme;
   }
 
-  // Otherwise, follow system preference
-  return getSystemTheme();
+  // Default to light theme (not system preference)
+  return "light";
 }
 
 let themeValue = getPreferredTheme();
