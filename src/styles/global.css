@@ -23,20 +23,20 @@
 /* BOLD RESCUE THEME - Light */
 :root,
 html[data-theme="light"] {
-  --background: #0a0a0f;
-  --foreground: #fafafa;
-  --accent: #ff5722;
+  --background: #fafafa;
+  --foreground: #1a1a24;
+  --accent: #e64a19;
   --accent-secondary: #ff9100;
-  --accent-glow: rgba(255, 87, 34, 0.3);
-  --muted: #d0d0e0;
-  --border: #2a2a3a;
-  --card-bg: #12121a;
-  --success: #00e676;
-  --gradient-start: #ff5722;
+  --accent-glow: rgba(230, 74, 25, 0.2);
+  --muted: #5a5a6a;
+  --border: #e0e0e8;
+  --card-bg: #ffffff;
+  --success: #00c853;
+  --gradient-start: #e64a19;
   --gradient-end: #ff9100;
 }
 
-/* BOLD RESCUE THEME - Dark (same bold theme) */
+/* BOLD RESCUE THEME - Dark */
 html[data-theme="dark"] {
   --background: #0a0a0f;
   --foreground: #fafafa;
