@@ -183,6 +183,15 @@ html[data-theme="dark"] {
   border: 2px solid var(--accent);
 }
 
+/* Ensure gradient text stays visible on card hover */
+.rescue-card:hover .gradient-text {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: brightness(1.2);
+}
+
 /* Glow effects */
 .glow-accent {
   box-shadow: 0 0 30px var(--accent-glow);
