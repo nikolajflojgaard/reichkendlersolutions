@@ -1,0 +1,132 @@
+---
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import ContactForm from "@/components/ContactForm.astro";
+import Layout from "@/layouts/Layout.astro";
+
+// Get package from URL query parameter
+const packageParam = Astro.url.searchParams.get('pakke');
+---
+
+<Layout title="Kontakt | Website Rescue" description="Få en gratis audit af dit website. Jeg vender tilbage inden for 24 timer.">
+  <Header />
+  
+  <main id="main-content" class="mx-auto w-full max-w-4xl px-4 pb-12">    
+    <!-- Hero Section -->
+    <section class="pt-12 pb-8 text-center">
+      <div class="inline-block mb-4">
+        <span class="badge badge-accent text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          Gratis audit — ingen forpligtelser
+        </span>
+      </div>
+      
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">
+        Lad os <span class="gradient-text">redde</span> dit website
+      </h1>      
+      
+      <p class="text-xl text-muted max-w-2xl mx-auto">
+        Send mig din hjemmeside, så kigger jeg den igennem og sender dig 
+        <strong class="text-foreground">5 konkrete forbedringsmuligheder</strong> 
+        + top 3 quick wins.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-8">
+      <div class="grid md:grid-cols-2 gap-12">
+        
+        <!-- Left side: Info -->
+        <div class="space-y-8">          
+          <div class="rescue-card p-6">
+            <h3 class="font-bold text-lg mb-4">Hvad sker der når du kontakter mig?</h3>            
+            <ol class="space-y-4 text-muted">
+              <li class="flex gap-3">
+                <span class="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center text-sm font-bold text-accent">1</span>
+                <span>Du sender din hjemmeside via formularen</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center text-sm font-bold text-accent">2</span>
+                <span>Jeg kigger den igennem inden for 24 timer</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center text-sm font-bold text-accent">3</span>
+                <span>Du får en mini-audit med 5 punkter + 3 quick wins</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="flex-shrink-0 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center text-sm font-bold text-accent">4</span>
+                <span>Du beslutter selv om du vil gå videre</span>
+              </li>
+            </ol>
+          </div>
+          
+          <div class="rescue-card p-6">
+            <blockquote class="italic text-muted mb-4">
+              "Jeg fik 3x flere henvendelser efter Nikolajs opgradering. 
+              Det har virkelig gjort en forskel for min forretning."
+            </blockquote>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
+                <span class="font-bold text-accent">MJ</span>
+              </div>
+              <div>
+                <p class="font-semibold">Mikael J.</p>
+                <p class="text-sm text-muted">Ejer, Håndværkerfirma</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-success flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm">100% gratis og uforpligtende</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-success flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm">Svar inden for 24 timer</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-success flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm">Konkrete, handlingsorienterede råd</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right side: Form -->
+        <div class="rescue-card p-8">
+          <ContactForm showPackageSelect={true} />
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Alternative contact -->
+    <section class="py-8 text-center">
+      <p class="text-muted">
+        Foretrækker du email? 
+        <a href="mailto:nikolaj_fl@hotmail.com" class="text-accent hover:underline">
+          nikolaj_fl@hotmail.com
+        </a>
+      </p>
+    </section>
+  </main>
+  
+  <Footer />
+  
+  <script>
+    // Set package from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const packageSelect = document.getElementById('package');
+    if (packageSelect && urlParams.get('pakke')) {
+      packageSelect.value = urlParams.get('pakke');
+    }
+  </script>
+</Layout>
