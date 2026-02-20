@@ -1,30 +1,29 @@
 ---
-// ContactForm.astro - A reusable contact form component
-// Uses Formspree for form handling (replace YOUR_FORM_ID with actual ID)
+// EmailJS Contact Form - Gratis med auto-svar
+// 200 emails/md gratis på EmailJS
 
 interface Props {
-  formId?: string;
-  redirectUrl?: string;
   showPackageSelect?: boolean;
+  serviceId?: string;
+  templateId?: string;
+  publicKey?: string;
 }
 
 const { 
-  formId = "mkovvpke", // Formspree form ID
-  redirectUrl = "/tak",
-  showPackageSelect = true 
+  showPackageSelect = true,
+  serviceId = "YOUR_SERVICE_ID",
+  templateId = "YOUR_TEMPLATE_ID", 
+  publicKey = "YOUR_PUBLIC_KEY"
 } = Astro.props;
 ---
 
 <form 
-  action={`https://formspree.io/f/${formId}`}
-  method="POST"
-  class="space-y-6"
   id="contact-form"
+  class="space-y-6"
+  data-service-id={serviceId}
+  data-template-id={templateId}
+  data-public-key={publicKey}
 >
-  <!-- Hidden fields for Formspree configuration -->
-  <input type="hidden" name="_subject" value="Ny henvendelse fra Website Rescue" />
-  <input type="hidden" name="_replyto" value="nikolaj_fl@hotmail.com" />
-  <input type="hidden" name="_redirect" value={redirectUrl} />
   
   <!-- Name field -->
   <div class="form-group">
@@ -34,7 +33,7 @@ const {
     <input
       type="text"
       id="name"
-      name="name"
+      name="from_name"
       required
       placeholder="F.eks. Lars Jensen"
       class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
@@ -49,7 +48,7 @@ const {
     <input
       type="email"
       id="email"
-      name="email"
+      name="reply_to"
       required
       placeholder="lars@virksomhed.dk"
       class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
@@ -66,40 +65,86 @@ const {
       id="website"
       name="website"
       required
-      placeholder="https://..."
+      placeholder="https://... (eller skriv 'Ny hjemmeside' hvis du ikke har en endnu)"
       class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
     />
   </div>
   
-  <!-- Package selection (optional) -->
-  {showPackageSelect && (
-    <div class="form-group">
-      <label for="package" class="block text-sm font-semibold mb-2">
-        Interesseret pakke
+  <!-- Service type -->
+  <div class="form-group">
+    <label class="block text-sm font-semibold mb-2">
+      Hvad har du brug for? <span class="text-red-500">*</span>
+    </label>
+    <div class="space-y-2">
+      <label class="flex items-center gap-3 p-3 border border-border rounded-lg cursor-pointer hover:bg-muted/50 transition-colors">
+        <input type="radio" name="service_type" value="rescue" required class="w-4 h-4 text-accent" />
+        <div>
+          <span class="font-medium">Website Rescue</span>
+          <p class="text-xs text-muted">Opgradering af eksisterende hjemmeside</p>
+        </div>
       </label>
-      <select
-        id="package"
-        name="package"
-        class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
-      >
-        <option value="">Vælg pakke (valgfri)</option>
-        <option value="starter">Starter (7.500 kr)</option>
-        <option value="pro">Pro (14.500 kr)</option>
-        <option value="usikker">Usikker / vil høre mere</option>
-      </select>
+      <label class="flex items-center gap-3 p-3 border border-border rounded-lg cursor-pointer hover:bg-muted/50 transition-colors">
+        <input type="radio" name="service_type" value="new" required class="w-4 h-4 text-accent" />
+        <div>
+          <span class="font-medium">Ny hjemmeside</span>
+          <p class="text-xs text-muted">Helt ny hjemmeside fra bunden</p>
+        </div>
+      </label>
+      <label class="flex items-center gap-3 p-3 border border-border rounded-lg cursor-pointer hover:bg-muted/50 transition-colors">
+        <input type="radio" name="service_type" value="usikker" required class="w-4 h-4 text-accent" />
+        <div>
+          <span class="font-medium">Usikker / vil høre mere</span>
+          <p class="text-xs text-muted">Jeg vejleder dig til den rette løsning</p>
+        </div>
+      </label>
     </div>
-  )}
+  </div>
+  
+  <!-- Package selection (shows when rescue is selected) -->
+  <div id="package-section" class="form-group hidden">
+    <label for="package" class="block text-sm font-semibold mb-2">
+      Vælg pakke
+    </label>
+    <select
+      id="package"
+      name="package"
+      class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+    >
+      <option value="">Vælg pakke...</option>
+      <option value="starter">Starter (7.500 kr) — Redning af eksisterende site</option>
+      <option value="pro">Pro (14.500 kr) — Komplet makeover + support</option>
+    </select>
+  </div>
+  
+  <!-- Budget for new websites -->
+  <div id="budget-section" class="form-group hidden">
+    <label for="budget" class="block text-sm font-semibold mb-2">
+      Budget for ny hjemmeside
+    </label>
+    <select
+      id="budget"
+      name="budget"
+      class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+    >
+      <option value="">Vælg budgetområde...</option>
+      <option value="10-20">10.000 - 20.000 kr</option>
+      <option value="20-35">20.000 - 35.000 kr</option>
+      <option value="35-50">35.000 - 50.000 kr</option>
+      <option value="50plus">Over 50.000 kr</option>
+      <option value="usikker">Usikker — vil have vejledning</option>
+    </select>
+  </div>
   
   <!-- Message field -->
   <div class="form-group">
     <label for="message" class="block text-sm font-semibold mb-2">
-      Besked
+      Fortæl om dit projekt
     </label>
     <textarea
       id="message"
       name="message"
       rows="4"
-      placeholder="Beskriv dit problem eller hvad du gerne vil opnå..."
+      placeholder="Beskriv kort: Hvad laver din virksomhed? Hvad har du brug for hjælp til? Har du en tidslinje?"
       class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all resize-y"
     ></textarea>
   </div>
@@ -107,40 +152,132 @@ const {
   <!-- Submit button -->
   <button
     type="submit"
+    id="submit-btn"
     class="btn-rescue w-full text-lg py-4"
   >
-    Send min hjemmeside til gratis audit
+    Send forespørgsel
   </button>
   
   <p class="text-sm text-muted text-center">
     Jeg vender tilbage inden for 24 timer på hverdage.
   </p>
+  
+  <!-- Status message -->
+  <div id="form-status" class="hidden mt-4 p-4 rounded-lg"></div>
 </form>
 
 <script>
-  // Client-side form validation and enhancement
+  // Show/hide sections based on service type
   document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contact-form') as HTMLFormElement;
+    const form = document.getElementById('contact-form');
+    const serviceRadios = document.querySelectorAll('input[name="service_type"]');
+    const packageSection = document.getElementById('package-section');
+    const budgetSection = document.getElementById('budget-section');
     
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    serviceRadios.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        const value = e.target.value;
         
-        // Disable button to prevent double submission
-        if (submitBtn) {
-          submitBtn.disabled = true;
-          submitBtn.textContent = 'Sender...';
+        if (value === 'rescue') {
+          packageSection?.classList.remove('hidden');
+          budgetSection?.classList.add('hidden');
+        } else if (value === 'new') {
+          packageSection?.classList.add('hidden');
+          budgetSection?.classList.remove('hidden');
+        } else {
+          packageSection?.classList.add('hidden');
+          budgetSection?.classList.add('hidden');
         }
-        
-        // Basic validation
-        const websiteInput = form.querySelector('#website') as HTMLInputElement;
+      });
+    });
+  });
+</script>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  // Initialize EmailJS
+  (function() {
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const statusDiv = document.getElementById('form-status');
+    
+    if (!form) return;
+    
+    const serviceId = form.dataset.serviceId;
+    const templateId = form.dataset.templateId;
+    const publicKey = form.dataset.publicKey;
+    
+    // Skip if not configured
+    if (serviceId === 'YOUR_SERVICE_ID') {
+      console.log('EmailJS not configured yet');
+      return;
+    }
+    
+    emailjs.init(publicKey);
+    
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      // Disable button
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sender...';
+      
+      try {
+        // Ensure URL has protocol for website field
+        const websiteInput = document.getElementById('website');
         if (websiteInput && websiteInput.value) {
-          // Ensure URL has protocol
-          if (!websiteInput.value.match(/^https?:\/\//i)) {
+          const val = websiteInput.value.toLowerCase();
+          if (!val.match(/^https?:\/\//i) && !val.includes('ny hjemmeside')) {
             websiteInput.value = 'https://' + websiteInput.value;
           }
         }
-      });
-    }
-  });
+        
+        await emailjs.sendForm(serviceId, templateId, form);
+        
+        // Show success
+        statusDiv.classList.remove('hidden', 'bg-red-500/20', 'text-red-500');
+        statusDiv.classList.add('bg-green-500/20', 'text-green-500');
+        statusDiv.innerHTML = `
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <div>
+              <p class="font-bold">Tak for din henvendelse!</p>
+              <p class="text-sm">Du får en bekræftelse på email inden for få minutter. Jeg vender tilbage inden for 24 timer.</p>
+            </div>
+          </div>
+        `;
+        
+        form.reset();
+        
+        // Redirect after 3 seconds
+        setTimeout(() => {
+          window.location.href = '/tak';
+        }, 3000);
+        
+      } catch (error) {
+        console.error('EmailJS error:', error);
+        
+        statusDiv.classList.remove('hidden', 'bg-green-500/20', 'text-green-500');
+        statusDiv.classList.add('bg-red-500/20', 'text-red-500');
+        statusDiv.innerHTML = `
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            <div>
+              <p class="font-bold">Der opstod en fejl</p>
+              <p class="text-sm">Prøv igen eller send en email til nikolaj_fl@hotmail.com</p>
+            </div>
+          </div>
+        `;
+        
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send forespørgsel';
+      }
+    });
+  })();
 </script>

@@ -4,7 +4,7 @@ import Header from "@/components/Header.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="Priser | Website Rescue" description="Fast pris på website rescue. Ingen skjulte gebyrer.">
+<Layout title="Priser | Website Rescue" description="Fast pris på website rescue og ny hjemmeside. Ingen skjulte gebyrer.">
   <Header />
   
   <main id="main-content" class="mx-auto w-full max-w-5xl px-4 pb-12">
@@ -19,10 +19,12 @@ import Layout from "@/layouts/Layout.astro";
         </span>
       </div>
       <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">
-        Vælg din <span class="gradient-text">Rescue</span>-pakke
+        Vælg din <span class="gradient-text">løsning</span>
       </h1>
       <p class="text-xl text-muted max-w-2xl mx-auto">
-        Alle pakker inkluderer målbare KPI'er. Du ser resultatet før du betaler.
+        Website <span class="text-foreground font-semibold">Rescue</span> af eksisterende site, 
+        eller <span class="text-foreground font-semibold">helt ny hjemmeside</span> fra bunden.
+        Fast pris — ingen overraskelser.
       </p>
     </section>
 
@@ -162,6 +164,123 @@ import Layout from "@/layouts/Layout.astro";
               </li>
             </ul>
           </div>
+        </div�ult
+      </div>
+    </section>
+
+    <!-- New Website Section -->
+    <section class="py-8 mt-8">
+      <div class="text-center mb-8">
+        <p class="text-accent font-semibold uppercase tracking-wider mb-2">Eller start fra bunden</p>
+        <h2 class="text-3xl font-bold">Ny hjemmeside</h2>
+        <p class="text-muted mt-2">Ingen eksisterende side? Lad os bygge noget fantastisk sammen.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- New Website Basic -->
+        <div class="rescue-card p-8">
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold mb-2">Ny Side — Basic</h2>
+            <p class="text-muted text-sm">Professionel hjemmeside til mindre virksomheder</p>
+          </div>
+          
+          <div class="mb-6">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-extrabold gradient-text">15.000</span>
+              <span class="text-muted">DKK + moms</span>
+            </div>
+            <p class="text-sm text-accent mt-2">7-10 arbejdsdage</p>
+          </div>
+          
+          <a href="/kontakt?service=ny-basic" class="btn-rescue w-full block text-center mb-8">
+            Få tilbud
+          </a>
+          
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Unikt design (ikke template)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Op til 5 sider</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Mobiloptimeret</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Kontaktformular</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>SEO-optimeret</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- New Website Pro -->
+        <div class="rescue-card p-8">
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold mb-2 gradient-text">Ny Side — Pro</h2>
+            <p class="text-muted text-sm">Komplet løsning med avanceret funktionalitet</p>
+          </div>
+          
+          <div class="mb-6">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-extrabold gradient-text">25.000</span>
+              <span class="text-muted">DKK + moms</span>
+            </div>
+            <p class="text-sm text-accent mt-2">14-20 arbejdsdage</p>
+          </div>
+          
+          <a href="/kontakt?service=ny-pro" class="btn-rescue w-full block text-center mb-8">
+            Få tilbud
+          </a>
+          
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Alt fra Basic-pakken</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Op til 10 sider</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Blog/nyhedssektion</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Avanceret kontakt/leadformular</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>30 dages support efter launch</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
