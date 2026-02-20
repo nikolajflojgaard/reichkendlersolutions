@@ -3,6 +3,7 @@ import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
 import IconMoon from "@/assets/icons/IconMoon.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconX from "@/assets/icons/IconX.svg";
+import Logo from "./Logo.astro";
 import { SITE } from "@/config";
 import Hr from "./Hr.astro";
 
@@ -17,33 +18,43 @@ const isActive = (path: string) => {
 };
 ---
 
-<header>
-  <a id="skip-to-content" href="#main-content" class="absolute -top-full left-16 z-50 bg-background px-3 py-2 text-accent backdrop-blur-lg transition-all focus:top-4">
+<header class="relative">
+  <a id="skip-to-content" href="#main-content" class="absolute -top-full left-16 z-50 bg-accent text-white px-4 py-2 font-bold transition-all focus:top-4 rounded-full">
     Skip to content
   </a>
-  <div id="nav-container" class="mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row">
-    <div id="top-nav-wrap" class="relative flex w-full items-baseline justify-between bg-background p-4 sm:items-center sm:py-6">
-      <a href="/" class="absolute py-1 text-2xl leading-7 font-semibold whitespace-nowrap sm:static">
-        Website Rescue
-      </a>
-      <nav id="nav-menu" class="flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0">
+  
+  <div id="nav-container" class="mx-auto flex max-w-6xl flex-col items-center justify-between sm:flex-row px-4">
+    <div id="top-nav-wrap" class="relative flex w-full items-center justify-between py-4 sm:py-6">
+      <Logo size="md" />
+      
+      <nav id="nav-menu" class="flex w-full flex-col items-center sm:ml-8 sm:flex-row sm:justify-end sm:space-x-6 sm:py-0">
         <button id="menu-btn" class="focus-outline self-end p-2 sm:hidden" aria-label="Open Menu" aria-expanded="false" aria-controls="menu-items">
-          <IconX id="close-icon" class="hidden" />
-          <IconMenuDeep id="menu-icon" />
+          <IconX id="close-icon" class="hidden text-accent" />
+          <IconMenuDeep id="menu-icon" class="text-accent" />
         </button>
-        <ul id="menu-items" class:list={[ "mt-4 grid w-44 grid-cols-2 place-content-center gap-2", "[&>li>a]:block [&>li>a]:px-4 [&>li>a]:py-3 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a]:hover:text-accent sm:[&>li>a]:px-2 sm:[&>li>a]:py-1", "hidden", "sm:mt-0 sm:ml-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0" ]}>
-          <li class="col-span-2">
+        
+        <ul id="menu-items" class:list={[ 
+          "mt-4 grid w-full grid-cols-1 place-content-center gap-3",
+          "[&>li>a]:block [&>li>a]:px-4 [&>li>a]:py-3 [&>li>a]:text-center [&>li>a]:font-bold [&>li>a]:uppercase [&>li>a]:tracking-wider [&>li>a]:text-sm",
+          "[&>li>a]:hover:text-accent [&>li>a]:transition-colors",
+          "hidden",
+          "sm:mt-0 sm:ml-0 sm:flex sm:w-auto sm:gap-x-6" 
+        ]}>
+          <li>
             <a href="/" class:list={{ "active-nav": isActive("/") }}>Forside</a>
           </li>
-          <li class="col-span-2">
-            <a href="https://dk.linkedin.com/in/nikolaj-fl%C3%B8jgaard-90a71b109" target="_blank">LinkedIn</a>
+          <li>
+            <a href="/priser" class:list={{ "active-nav": isActive("/priser") }}>Priser</a>
           </li>
-          <li class="col-span-2">
-            <a href="https://x.com/FlJgaard" target="_blank">X</a>
+          <li>
+            <a href="https://dk.linkedin.com/in/nikolaj-fl%C3%B8jgaard-90a71b109" target="_blank" class="flex items-center gap-2">
+              <span>LinkedIn</span>
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
           </li>
           {SITE.lightAndDarkMode && (
-            <li class="col-span-2 flex items-center justify-center">
-              <button id="theme-btn" class="focus-outline relative size-12 p-4 sm:size-8 hover:[&>svg]:stroke-accent" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+            <li class="flex items-center justify-center">
+              <button id="theme-btn" class="focus-outline relative size-10 hover:text-accent transition-colors" title="Skift tema" aria-label="auto" aria-live="polite">
                 <IconMoon class="absolute top-[50%] left-[50%] -translate-[50%] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
                 <IconSunHigh class="absolute top-[50%] left-[50%] -translate-[50%] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
               </button>

@@ -31,12 +31,11 @@ interface Site {
 
 // Site configuration
 export const SITE: Site = {
-  // TODO: set this to your canonical domain once you deploy.
   website: "https://example.com/",
-  author: "Nikolaj Fløjgaard",
-  profile: "https://example.com/about",
-  desc: "Senior integration architect with a passion for writing articles and building stuff. Sharing my learnings along the way here.",
-  title: "Nikolaj Fløjgaard",
+  author: "Website Rescue",
+  profile: "https://example.com/",
+  desc: "Vi redder hjemmesider fra at være usynlige. 5 dage. Fast pris. Målbare resultater.",
+  title: "Website Rescue",
   ogImage: "avatar.jpg",
   lightAndDarkMode: true,
   postPerIndex: 10,
@@ -50,7 +49,7 @@ export const SITE: Site = {
     url: "",
   },
   dynamicOgImage: true,
-  lang: "en",
+  lang: "da",
   timezone: "Europe/Copenhagen",
 };
 

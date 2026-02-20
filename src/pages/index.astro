@@ -1,128 +1,307 @@
 ---
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
-import { SITE } from "@/config";
+import Logo from "@/components/Logo.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout description="Conversion-focused website upgrade for small businesses. 5-day turnaround.">
+<Layout description="Website Rescue — vi redder din hjemmeside fra at være usynlig. 5 dage. Fast pris. Målbare resultater.">
   <Header />
-  <main id="main-content" class="mx-auto w-full max-w-3xl px-4 pb-12">
-    <section class="pt-12 pb-6">
-      <div class="flex flex-col sm:flex-row items-start gap-6 mb-8">
-        <img src="/avatar.jpg" alt="Nikolaj Fløjgaard" class="w-24 h-24 rounded-full object-cover" />
-        <div>
-          <h1 class="text-2xl font-bold tracking-wide sm:text-3xl mb-2">
-            Website Rescue
-          </h1>
-          <p class="text-muted">Af Nikolaj Fløjgaard</p>
-        </div>
+  
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section relative min-h-[80vh] flex items-center justify-center px-4 py-20 overflow-hidden">
+      <!-- Background glow -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-secondary/10 rounded-full blur-3xl"></div>
       </div>
       
-      <p class="text-lg mb-4">
-        Din hjemmeside skal ikke bare se pæn ud. Den skal skabe henvendelser.
-      </p>
-      <p class="text-muted mb-8">
-        Jeg hjælper små virksomheder med at få mere ud af deres website — med fokus på 
-        <strong>konvertering</strong>, ikke bare design. <strong>5 arbejdsdage.</strong> Fast pris.
-      </p>
-    </section>
-
-    <section class="prose mb-12">
-      <h2 class="text-xl font-semibold mb-4">Hvem er jeg?</h2>
-      <p>
-        Jeg er Senior Integration Architect hos TDC NET, hvor jeg bygger automation og workflows 
-        der skalerer. I min fritid udvikler jeg Home Assistant integrationer og eksperimenterer 
-        med de nyeste AI-modeller.
-      </p>
-      <p>
-        Website Rescue er mit bud på at hjælpe mindre virksomheder — dem der ikke har råd til 
-        et dyrt bureau, men stadig fortjener en hjemmeside der <strong>faktisk skaber kunder</strong>.
-      </p>
-      <p>
-        Jeg arbejder hurtigt fordi jeg bruger AI som force multiplier — det betyder lavere 
-        priser for dig og hurtigere levering.
-      </p>
-    </section>
-
-    <section class="prose mb-12">
-      <h2 class="text-xl font-semibold mb-4">Hvad jeg løser</h2>
-      <ul>
-        <li>Hjemmesider der ser "ok" ud, men konverterer ikke</li>
-        <li>Uklar value proposition</li>
-        <li>Svage eller ingen CTA'er</li>
-        <li>Dårlig mobiloplevelse</li>
-        <li>Manglende tillidssignaler</li>
-      </ul>
-    </section>
-
-    <section class="prose mb-12">
-      <h2 class="text-xl font-semibold mb-4">Pakker</h2>
-      
-      <div class="grid gap-6 not-prose">
-        <div class="border border-border rounded-lg p-6">
-          <h3 class="text-lg font-semibold mb-2">Starter — 7.500 DKK + moms</h3>
-          <p class="text-sm text-muted mb-4">5 arbejdsdage</p>
-          <ul class="text-sm space-y-1">
-            <li>Forside + 2 undersider redesignet</li>
-            <li>CTA-struktur (Ring / Book / Kontakt)</li>
-            <li>Mobiloptimering</li>
-            <li>Basic SEO (title/meta/OG)</li>
-            <li>Hastigheds quick wins</li>
-            <li>Tracking (GA4 + conversion events)</li>
-            <li>Før/efter KPI baseline</li>
-          </ul>
+      <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-8 animate-pulse-glow">
+          <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+          <span class="text-sm font-semibold text-accent">5 dages levering • Fast pris • Målbare resultater</span>
         </div>
-
-        <div class="border border-accent rounded-lg p-6 bg-accent/5">
-          <h3 class="text-lg font-semibold mb-2">Pro — 14.500 DKK + moms</h3>
-          <p class="text-sm text-muted mb-4">10 arbejdsdage</p>
-          <p class="text-sm mb-2">Alt i Starter +</p>
-          <ul class="text-sm space-y-1">
-            <li>Tekst/positionering rewrite</li>
-            <li>Content plan (6 emner)</li>
-            <li>Leadflow (form + auto-opfølgning)</li>
-            <li>30 dages growth support</li>
-            <li>Prioriteret supportkanal</li>
-          </ul>
+        
+        <!-- Main headline -->
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-6 leading-tight">
+          Din hjemmeside 
+          <span class="gradient-text">dræner</span>
+          <br />
+          penge hver dag
+        </h1>
+        
+        <!-- Subheadline -->
+        <p class="text-xl sm:text-2xl text-muted max-w-2xl mx-auto mb-10">
+          Vi redder websites fra at være <span class="text-foreground font-semibold">"pæne men ubrugelige"</span>.
+          Gør dem til <span class="text-accent font-semibold">konverteringsmaskiner</span>.
+        </p>
+        
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <a href="/priser" class="btn-rescue text-lg">
+            Se priser
+          </a>
+          <a href="https://dk.linkedin.com/in/nikolaj-fl%C3%B8jgaard-90a71b109" target="_blank" class="btn-outline text-lg">
+            Få gratis audit
+          </a>
+        </div>
+        
+        <!-- Trust badges -->
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-muted">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Ingen skjulte gebyrer</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Fast pris</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Målbare resultater</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="prose mb-12">
-      <h2 class="text-xl font-semibold mb-4">Sådan arbejder jeg (hurtigt)</h2>
-      <ol>
-        <li><strong>Gratis mini-audit</strong> — jeg analyserer dit nuværende site (5 punkter)</li>
-        <li><strong>Scope & prioritering</strong> — vi aftaler specifikt hvad der fix først</li>
-        <li><strong>Implementering</strong> — jeg bygger, du godkender</li>
-        <li><strong>Launch & måling</strong> — live med KPI-baseline</li>
-      </ol>
+    <!-- Problem Section -->
+    <section class="py-20 px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <p class="text-accent font-semibold uppercase tracking-wider mb-4">Problemet</p>
+          <h2 class="text-4xl font-bold mb-6">
+            Din hjemmeside ser måske <span class="gradient-text">"fin"</span> ud...
+          </h2>
+          <p class="text-xl text-muted max-w-2xl mx-auto">
+            ...men hvis den ikke skaber kunder, er den en udgift — ikke en investering.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="rescue-card p-6 text-center">
+            <div class="w-14 h-14 bg-red-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-7 h-7 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <h3 class="font-bold mb-2">Ingen henvendelser</h3>
+            <p class="text-sm text-muted">Besøgende kommer, men kontakter dig ikke</p>
+          </div>
+          
+          <div class="rescue-card p-6 text-center">
+            <div class="w-14 h-14 bg-orange-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <h3 class="font-bold mb-2">Høj bounce rate</h3>
+            <p class="text-sm text-muted">Folk forlader sitet efter få sekunder</p>
+          </div>
+          
+          <div class="rescue-card p-6 text-center">
+            <div class="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-7 h-7 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="font-bold mb-2">Dårlig mobil</h3>
+            <p class="text-sm text-muted">70% af trafikken er mobil — dit site klarer den ikke</p>
+          </div>
+          
+          <div class="rescue-card p-6 text-center">
+            <div class="w-14 h-14 bg-gray-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-7 h-7 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-bold mb-2">Uklart budskab</h3>
+            <p class="text-sm text-muted">Besøgende forstår ikke hvad du tilbyder</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="prose mb-12">
-      <h2 class="text-xl font-semibold mb-4">KPI'er jeg måler på</h2>
-      <ul>
-        <li><strong>Kontakt-rate</strong> — hvor mange % af besøgende tager kontakt</li>
-        <li><strong>Mobil bounce rate</strong> — forlader de med det samme?</li>
-        <li><strong>Tid på side</strong> — engagerer indholdet?</li>
-      </ul>
+    <!-- Solution Section -->
+    <section class="py-20 px-4 bg-muted/30">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-accent font-semibold uppercase tracking-wider mb-4">Løsningen</p>
+            <h2 class="text-4xl font-bold mb-6">
+              Vi gør din hjemmeside til en <span class="gradient-text">konverteringsmaskine</span>
+            </h2>
+            
+            <p class="text-lg text-muted mb-8">
+              Website Rescue er ikke "endnu et webbureau". Vi fokuserer udelukkende på én ting: 
+              <strong class="text-foreground">at få flere kunder ud af dit eksisterende besøg.</strong>
+            </p>
+            
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span>5-10 arbejdsdage</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span>Fast pris — ingen overraskelser</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span>Målbare KPI'er før/efter</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span>AI-accelereret arbejde = hurtigere levering</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="relative">
+            <div class="rescue-card p-8">
+              <div class="flex items-center justify-between mb-6">
+                <span class="text-sm text-muted">Før Rescue</span>
+                <span class="text-sm text-success font-bold">Efter Rescue</span>
+              </div>
+              
+              <div class="space-y-6">
+                <div>
+                  <div class="flex justify-between text-sm mb-2">
+                    <span>Kontakt-rate</span>
+                    <span class="font-bold">2% → 8%</span>
+                  </div>
+                  <div class="h-3 bg-muted rounded-full overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-accent to-accent-secondary rounded-full transition-all duration-1000" style="width: 80%"></div>
+                  </div>
+                </div>
+                
+                <div>
+                  <div class="flex justify-between text-sm mb-2">
+                    <span>Mobil bounce rate</span>
+                    <span class="font-bold">65% → 35%</span>
+                  </div>
+                  <div class="h-3 bg-muted rounded-full overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-accent to-accent-secondary rounded-full transition-all duration-1000" style="width: 65%"></div>
+                  </div>
+                </div>
+                
+                <div>
+                  <div class="flex justify-between text-sm mb-2">
+                    <span>Tid på side</span>
+                    <span class="font-bold">45s → 2m 30s</span>
+                  </div>
+                  <div class="h-3 bg-muted rounded-full overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-accent to-accent-secondary rounded-full transition-all duration-1000" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-6 pt-6 border-t border-border">
+                <p class="text-sm text-muted"><strong class="text-foreground">Typisk resultat</strong> efter Website Rescue. Dine resultater kan variere.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="prose mb-12 bg-accent/5 border border-accent rounded-lg p-6">
-      <h2 class="text-xl font-semibold mb-4">Gratis mini-audit (5 punkter)</h2>
-      <p class="mb-4">
-        Skriv <strong>"audit"</strong> på 
-        <a href="https://dk.linkedin.com/in/nikolaj-fl%C3%B8jgaard-90a71b109" target="_blank">LinkedIn</a> 
-        eller <a href="https://x.com/FlJgaard" target="_blank">X</a>, 
-        så sender jeg dig:
-      </p>
-      <ul>
-        <li>Top 3 conversion-fixes for dit site</li>
-        <li>Estimeret effort</li>
-        <li>Anbefalet pakke (Starter/Pro)</li>
-        <li>Fast pris — ingen overraskelser</li>
-      </ul>
+    <!-- Process Section -->
+    <section class="py-20 px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <p class="text-accent font-semibold uppercase tracking-wider mb-4">Processen</p>
+          <h2 class="text-4xl font-bold mb-6">Sådan virker det</h2>
+          <p class="text-xl text-muted max-w-2xl mx-auto">
+            Fra første kontakt til launch på kun 5 dage.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="rescue-card p-6 relative">
+            <div class="absolute -top-3 -left-3 w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+            <h3 class="font-bold mb-2 mt-2">Gratis audit</h3>
+            <p class="text-sm text-muted">Jeg analyserer dit site og finder de største quick wins.</p>
+          </div>
+          
+          <div class="rescue-card p-6 relative">
+            <div class="absolute -top-3 -left-3 w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+            <h3 class="font-bold mb-2 mt-2">Scope & aftale</h3>
+            <p class="text-sm text-muted">Vi fastlægger præcis hvad der skal gøres og prisen.</p>
+          </div>
+          
+          <div class="rescue-card p-6 relative">
+            <div class="absolute -top-3 -left-3 w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+            <h3 class="font-bold mb-2 mt-2">Design & build</h3>
+            <p class="text-sm text-muted">Jeg designer, du godkender, jeg bygger. 3-4 dage.</p>
+          </div>
+          
+          <div class="rescue-card p-6 relative">
+            <div class="absolute -top-3 -left-3 w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
+            <h3 class="font-bold mb-2 mt-2">Launch & mål</h3>
+            <p class="text-sm text-muted">Dit nye site går live med KPI-baseline.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="rescue-card p-12 relative overflow-hidden">
+          <!-- Background decoration -->
+          <div class="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+          <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-secondary/10 rounded-full blur-3xl"></div>
+          
+          <div class="relative z-10">
+            <h2 class="text-4xl font-bold mb-6">
+              Klar til at <span class="gradient-text">redde</span> dit website?
+            </h2>
+            
+            <p class="text-xl text-muted mb-8 max-w-2xl mx-auto">
+              Få en gratis mini-audit af dit site. Jeg finder de 3 største problemer 
+              og viser dig hvordan vi løser dem.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/priser" class="btn-rescue text-lg">
+                Se priser
+              </a>
+              <a href="https://dk.linkedin.com/in/nikolaj-fl%C3%B8jgaard-90a71b109" target="_blank" class="btn-outline text-lg">
+                Få gratis audit
+              </a>
+            </div>
+            
+            <p class="mt-6 text-sm text-muted">
+              📍 Baseret i København • arbejder med kunder i hele Danmark
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+  
   <Footer />
 </Layout>

@@ -1,0 +1,248 @@
+---
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Priser | Website Rescue" description="Fast pris på website rescue. Ingen skjulte gebyrer.">
+  <Header />
+  
+  <main id="main-content" class="mx-auto w-full max-w-5xl px-4 pb-12">
+    <!-- Hero -->
+    <section class="pt-12 pb-8 text-center">
+      <div class="inline-block mb-4">
+        <span class="badge badge-accent text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          Fast pris — ingen overraskelser
+        </span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">
+        Vælg din <span class="gradient-text">Rescue</span>-pakke
+      </h1>
+      <p class="text-xl text-muted max-w-2xl mx-auto">
+        Alle pakker inkluderer målbare KPI'er. Du ser resultatet før du betaler.
+      </p>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="py-8">
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        {
+          /* Starter Package */
+        }
+        <div class="rescue-card p-8 relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-muted px-4 py-2 rounded-bl-xl text-sm font-bold">
+            POPULÆR
+          </div>
+          
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold mb-2">Starter</h2>
+            <p class="text-muted text-sm">Perfekt til små virksomheder der skal have et løft</p>
+          </div>
+          
+          <div class="mb-6">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-extrabold gradient-text">7.500</span>
+              <span class="text-muted">DKK + moms</span>
+            </div>
+            <p class="text-sm text-accent mt-2">5 arbejdsdage</p>
+          </div>
+          
+          <a href="https://dk.linkedin.com/in/nikolaj-fl%C3%B8jgaard-90a71b109" target="_blank" class="btn-rescue w-full block text-center mb-8">
+            Få gratis audit
+          </a>
+          
+          <div class="space-y-4">
+            <p class="font-semibold text-sm uppercase tracking-wider text-muted mb-3">Inkluderet:</p>
+            
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Forside + 2 undersider redesignet</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>CTA-struktur (Ring / Book / Kontakt)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Mobiloptimering (100% responsive)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Basic SEO (title/meta/OG tags)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Hastigheds quick wins (Core Web Vitals)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Tracking (GA4 + conversion events)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Før/efter KPI baseline</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {
+          /* Pro Package */
+        }
+        <div class="rescue-card p-8 relative overflow-hidden gradient-border">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent to-accent-secondary"></div>
+          
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold mb-2 gradient-text">Pro</h2>
+            <p class="text-muted text-sm">For virksomheder der vil have det fulde pakke</p>
+          </div>
+          
+          <div class="mb-6">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-extrabold gradient-text">14.500</span>
+              <span class="text-muted">DKK + moms</span>
+            </div>
+            <p class="text-sm text-accent mt-2">10 arbejdsdage</p>
+          </div>
+          
+          <a href="https://dk.linkedin.com/in/nikolaj-fl%C3%B8jgaard-90a71b109" target="_blank" class="btn-rescue w-full block text-center mb-8">
+            Få gratis audit
+          </a>
+          
+          <div class="space-y-4">
+            <p class="font-semibold text-sm uppercase tracking-wider text-muted mb-3">Alt i Starter, plus:</p>
+            
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Tekst/positionering rewrite</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Content plan (6 emner)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Leadflow (form + auto-opfølgning)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>30 dages growth support</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Prioriteret supportkanal</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust indicators -->
+    <section class="py-8">
+      <div class="rescue-card p-8">
+        <h3 class="text-xl font-bold mb-6 text-center">Hvorfor fast pris?</h3>
+        
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p class="font-semibold">Ingen skjulte gebyrer</p>
+            <p class="text-sm text-muted">Du kender prisen fra start</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <p class="font-semibold">Hurtig levering</p>
+            <p class="text-sm text-muted">5-10 arbejdsdage</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <p class="font-semibold">Målbare resultater</p>
+            <p class="text-sm text-muted">KPI'er før og efter</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-8 mb-12">
+      <h3 class="text-2xl font-bold mb-6 text-center">Ofte stillede spørgsmål</h3>
+      
+      <div class="space-y-4 max-w-3xl mx-auto">
+        <div class="rescue-card p-6">
+          <h4 class="font-bold mb-2">Hvad hvis jeg ikke er tilfreds?</h4>
+          <p class="text-muted">Jeg arbejder iterativt med dig gennem hele processen. Du ser designet før det går live, og vi justerer indtil du er tilfreds.</p>
+        </div>
+        
+        <div class="rescue-card p-6">
+          <h4 class="font-bold mb-2">Hvilke platforme arbejder du med?</h4>
+          <p class="text-muted">Jeg arbejder primært med Astro (statiske sites), men kan også hjælpe med WordPress, Wix, Squarespace og andre platforme afhængigt af opgaven.</p>
+        </div>
+        
+        <div class="rescue-card p-6">
+          <h4 class="font-bold mb-2">Hvordan måler vi succes?</h4>
+          <p class="text-muted">Vi sætter en baseline før launch (kontakt-rate, bounce rate, tid på side) og måler igen efter 30 dage. Du får en rapport med resultaterne.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-8 text-center">
+      <div class="rescue-card p-8 max-w-2xl mx-auto">
+        <h3 class="text-2xl font-bold mb-4">Klar til at redde dit website?</h3>
+        <p class="text-muted mb-6">
+          Skriv <strong class="text-accent">"audit"</strong> på LinkedIn så kigger jeg på dit site.
+        </p>
+        
+        <a href="https://dk.linkedin.com/in/nikolaj-fl%C3%B8jgaard-90a71b109" target="_blank" class="btn-rescue inline-block">
+          Få gratis audit nu
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
