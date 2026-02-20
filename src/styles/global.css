@@ -28,7 +28,7 @@ html[data-theme="light"] {
   --accent: #ff5722;
   --accent-secondary: #ff9100;
   --accent-glow: rgba(255, 87, 34, 0.3);
-  --muted: #a0a0b0;
+  --muted: #d0d0e0;
   --border: #2a2a3a;
   --card-bg: #12121a;
   --success: #00e676;
@@ -43,7 +43,7 @@ html[data-theme="dark"] {
   --accent: #ff5722;
   --accent-secondary: #ff9100;
   --accent-glow: rgba(255, 87, 34, 0.3);
-  --muted: #a0a0b0;
+  --muted: #d0d0e0;
   --border: #2a2a3a;
   --card-bg: #12121a;
   --success: #00e676;
