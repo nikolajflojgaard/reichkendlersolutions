@@ -198,6 +198,25 @@ html[data-theme="dark"] {
   box-shadow: 0 20px 40px rgba(255, 87, 34, 0.15);
 }
 
+.rescue-card:hover h2,
+.rescue-card:hover h3,
+.rescue-card:hover p,
+.rescue-card:hover span,
+.rescue-card:hover li {
+  color: var(--foreground);
+}
+
+.rescue-card:hover .text-muted {
+  color: var(--muted);
+}
+
+.rescue-card:hover .gradient-text {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* Button styles */
 .btn-rescue {
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));

@@ -31,8 +31,8 @@ function getPreferredTheme() {
     return currentTheme;
   }
 
-  // Default to light theme (not system preference)
-  return "light";
+  // Default to dark theme
+  return "dark";
 }
 
 let themeValue = getPreferredTheme();
