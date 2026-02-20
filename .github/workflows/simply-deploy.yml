@@ -1,0 +1,42 @@
+name: Deploy to Simply (FTPS)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: simply-deploy-main
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Upload to Simply over FTPS
+        env:
+          HOST: ${{ secrets.SIMPLY_SFTP_HOST }}
+          USER: ${{ secrets.SIMPLY_SFTP_USER }}
+          PASS: ${{ secrets.SIMPLY_SFTP_PASS }}
+          PORT: ${{ secrets.SIMPLY_SFTP_PORT || '21' }}
+          REMOTE_DIR: ${{ secrets.SIMPLY_REMOTE_DIR || '.' }}
+        run: |
+          lftp -e "
+            set ftp:passive-mode true;
+            set ftp:ssl-allow yes;
+            set ftp:ssl-force true;
+            set ftp:ssl-protect-data true;
+            set ssl:verify-certificate no;
+            open -u $USER,$PASS ftp://$HOST:$PORT;
+            mirror -R --delete --verbose . $REMOTE_DIR;
+            bye
+          "
