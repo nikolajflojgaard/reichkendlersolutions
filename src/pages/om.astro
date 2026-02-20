@@ -8,13 +8,14 @@ import Layout from "@/layouts/Layout.astro";
   <Header />
   
   <main id="main-content" class="mx-auto w-full max-w-3xl px-4 pb-12 pt-12">
-    <div class="rescue-card p-8 md:p-12">
+    
+    <!-- Profile Hero -->
+    <div class="rescue-card p-8 md:p-12 mb-8">
       <div class="flex flex-col md:flex-row items-center gap-8">
         <img src="/avatar.jpg" alt="Nikolaj Fløjgaard" class="w-32 h-32 rounded-full object-cover border-4 border-accent/30" />
         
         <div class="text-center md:text-left">
-          <h1 class="text-3xl font-bold mb-4">Nikolaj Fløjgaard</h1>
-          
+          <h1 class="text-3xl font-bold mb-2">Nikolaj Fløjgaard</h1>
           <p class="text-accent font-semibold mb-4">Senior Integration Architect @ TDC NET</p>
           
           <p class="text-muted mb-4">
@@ -38,6 +39,206 @@ import Layout from "@/layouts/Layout.astro";
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               X
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Perfect Match Section (inspired by Nicolai) -->
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+      <div class="rescue-card p-6">
+        <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          Et perfekt match
+        </h2>
+        
+        <p class="text-sm text-muted mb-4">Vi passer godt sammen hvis du:</p>
+        
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm">Vil have <strong>resultater</strong>, ikke bare et pænt design</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm">Har brug for <strong>hurtig handling</strong> (5-10 dage)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm">Værdsætter <strong>ærlighed</strong> og direkte kommunikation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm">Foretrækker <strong>fast pris</strong> uden skjulte gebyrer</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rescue-card p-6 opacity-75">
+        <h2 class="text-xl font-bold mb-4 flex items-center gap-2 text-muted">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+          Ikke et godt match
+        </h2>
+        
+        <p class="text-sm text-muted mb-4">Vi passer nok ikke hvis du:</p>
+        
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-muted flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm text-muted">Kun vil have det <strong>billigste</strong> uden at tænke på kvalitet</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-muted flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm text-muted">Ønsker <strong>unlimited revisions</strong> og langtrukne processer</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-muted flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm text-muted">Skal bruge et <strong>stort bureau</strong> med 20 ansatte</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-muted flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm text-muted">Ikke har <strong>t budget</strong> på mindst 7.500 DKK</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kompetencer (inspired by Nicolai) -->
+    <div class="rescue-card p-8 mb-8">
+      <h2 class="text-2xl font-bold mb-6">Mine kernekompetencer</h2>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <span class="text-sm font-medium">Webdesign</span>
+        </div>
+        
+        <div class="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+          </div>
+          <span class="text-sm font-medium">Konvertering</span>
+        </div>
+        
+        <div class="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <span class="text-sm font-medium">Mobile First</span>
+        </div>
+        
+        <div class="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <span class="text-sm font-medium">Tracking</span>
+        </div>
+        
+        <div class="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <span class="text-sm font-medium">Hastighed</span>
+        </div>
+        
+        <div class="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <span class="text-sm font-medium">SEO Basics</span>
+        </div>
+        
+        <div class="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <span class="text-sm font-medium">Integration</span>
+        </div>
+        
+        <div class="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <span class="text-sm font-medium">AI Assist</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline / Baggrund -->
+    <div class="rescue-card p-8">
+      <h2 class="text-2xl font-bold mb-6">Baggrund</h2>
+      
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="flex flex-col items-center">
+            <div class="w-4 h-4 bg-accent rounded-full"></div>
+            <div class="w-0.5 h-full bg-border"></div>
+          </div>
+          <div class="pb-6">
+            <p class="text-sm text-accent font-semibold">2024 – Nu</p>
+            <h3 class="font-bold">Senior Integration Architect @ TDC NET</h3>
+            <p class="text-sm text-muted">Bygger automation og agentic workflows der håndterer komplekse integrationer mellem kritiske systemer.</p>
+          </div>
+        </div>
+        
+        <div class="flex gap-4">
+          <div class="flex flex-col items-center">
+            <div class="w-4 h-4 bg-accent rounded-full"></div>
+            <div class="w-0.5 h-full bg-border"></div>
+          </div>
+          <div class="pb-6">
+            <p class="text-sm text-accent font-semibold">2020 – 2024</p>
+            <h3 class="font-bold">Integration Architect @ TDC NET</h3>
+            <p class="text-sm text-muted">Arbejdede med enterprise integrationer og platform-arkitektur.</p>
+          </div>
+        </div>
+        
+        <div class="flex gap-4">
+          <div class="flex flex-col items-center">
+            <div class="w-4 h-4 bg-accent rounded-full"></div>
+          </div>
+          <div>
+            <p class="text-sm text-accent font-semibold">2015 – 2020</p>
+            <h3 class="font-bold">Solution Architect</h3>
+            <p class="text-sm text-muted">Fokus på integration patterns og system design.</p>
           </div>
         </div>
       </div>
