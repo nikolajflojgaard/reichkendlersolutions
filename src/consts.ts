@@ -31,9 +31,9 @@ interface Site {
 
 // Site configuration
 export const SITE: Site = {
-  website: "https://example.com/",
-  author: "Website Rescue",
-  profile: "https://example.com/",
+  website: "https://nikolajflojgaard.me/",
+  author: "Nikolaj Fløjgaard",
+  profile: "https://nikolajflojgaard.me/om/",
   desc: "Vi redder hjemmesider fra at være usynlige. 5 dage. Fast pris. Målbare resultater.",
   title: "Website Rescue",
   ogImage: "avatar.jpg",
