@@ -1,4 +1,4 @@
-/* ReichkendlerSolutions - Bold Rescue Theme */
+/* ReichkendlerSolutions */
 @import "tailwindcss";
 @import "./typography.css";
 
@@ -20,7 +20,7 @@
   font-display: swap;
 }
 
-/* BOLD RESCUE THEME - Light */
+/* Light theme */
 :root,
 html[data-theme="light"] {
   --background: #fafafa;
@@ -36,7 +36,7 @@ html[data-theme="light"] {
   --gradient-end: #ff9100;
 }
 
-/* BOLD RESCUE THEME - Dark */
+/* Dark theme */
 html[data-theme="dark"] {
   --background: #0a0a0f;
   --foreground: #fafafa;

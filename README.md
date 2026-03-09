@@ -1,6 +1,6 @@
 # ReichkendlerSolutions
 
-En professionel hjemmeside for ReichkendlerSolutions — et niche-webbureau der redder eksisterende hjemmesider fra at være "pæne men ubrugelige" og bygger nye fra bunden med fokus på konvertering.
+En professionel hjemmeside for ReichkendlerSolutions — et niche-webbureau der opgraderer eksisterende hjemmesider fra at være "pæne men ubrugelige" og bygger nye fra bunden med fokus på konvertering.
 
 ## 🌐 Live Site
 
@@ -61,7 +61,7 @@ For at opsætte auto-svar til kunder:
 ## 📝 Sider
 
 ### Forside (/)
-- Hero med "ReichkendlerSolutions + Ny hjemmeside" budskab
+- Hero med "ReichkendlerSolutions + ny hjemmeside" budskab
 - Problem-sektion (hvad der går galt)
 - Løsnings-sektion (hvad vi gør)
 - Proces-sektion (4 trin)
@@ -78,7 +78,7 @@ For at opsætte auto-svar til kunder:
 
 ### Kontakt (/kontakt)
 Dynamisk formular:
-- Vælg service type (Rescue / Ny / Usikker)
+- Vælg service type (Opgradering / Ny / Usikker)
 - Viser relevante felter baseret på valg
 - Sender til nikolaj_fl@hotmail.com
 - Redirect til /tak efter afsendelse
@@ -99,6 +99,25 @@ npm run build
 npm run preview
 ```
 
+## 🚀 Deployment & release
+
+### Auto deploy
+Push til `main` deployer automatisk til Simply via GitHub Actions.
+
+### Manuel release
+Hvis du vil lave en markeret release/tag:
+
+```bash
+./scripts/release.sh 0.0.2
+```
+
+Det gør følgende:
+- bumper `package.json` version
+- bygger sitet
+- pusher `main`
+- opretter/pusher git tag
+- opretter GitHub release
+
 ## 📦 Deployment
 
 ### Vercel (anbefalet)
@@ -118,8 +137,8 @@ I `templates/` ligger 4 .md filer til at brief projekter:
 
 1. **ny-hjemmeside-basic.md** - Ny hjemmeside, basis pakke
 2. **ny-hjemmeside-pro.md** - Ny hjemmeside, pro pakke  
-3. **eksisterende-basic.md** - Rescue eksisterende, basis
-4. **eksisterende-pro.md** - Rescue eksisterende, pro
+3. **eksisterende-basic.md** - Eksisterende site, basis
+4. **eksisterende-pro.md** - Eksisterende site, pro
 
 Udfyld skabelonen med kundens info, så kan vi gå direkte i gang med kodning.
 

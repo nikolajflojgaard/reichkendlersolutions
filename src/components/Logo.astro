@@ -21,26 +21,9 @@ const textSizes = {
 <a href="/" class="flex items-center gap-3 group">
   <div class={`${sizes[size]} relative flex items-center justify-center`}>
     <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-      {
-        /* Outer ring with gradient */
-      }
-      <circle cx="24" cy="24" r="22" stroke="url(#gradient)" stroke-width="3" fill="none" />
-      
-      {
-        /* Inner rescue cross */
-      }
-      <path d="M24 8V40M8 24H40" stroke="url(#gradient)" stroke-width="4" stroke-linecap="round" />
-      
-      {
-        /* Center dot */
-      }
-      <circle cx="24" cy="24" r="6" fill="url(#gradient)" />
-      
-      {
-        /* Lightning bolt - rescue energy */
-      }
-      <path d="M28 12L20 20H26L22 32L32 22H26L28 12Z" fill="#ff9100" />
-      
+      <rect x="4" y="4" width="40" height="40" rx="12" stroke="url(#gradient)" stroke-width="3" fill="none" />
+      <path d="M15 33V15H25C30.5 15 34 18.2 34 22.8C34 27.7 30.3 31 24.6 31H19.5" stroke="url(#gradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M24 24L34 33" stroke="#ff9100" stroke-width="4" stroke-linecap="round" />
       <defs>
         <linearGradient id="gradient" x1="0" y1="0" x2="48" y2="48">
           <stop offset="0%" stop-color="#ff5722" />
@@ -48,13 +31,9 @@ const textSizes = {
         </linearGradient>
       </defs>
     </svg>
-    
-    {
-      /* Glow effect */
-    }
     <div class="absolute inset-0 bg-accent/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
   </div>
-  
+
   <div class="flex flex-col">
     <span class={`${textSizes[size]} font-bold gradient-text leading-tight`}>
       Reichkendler
