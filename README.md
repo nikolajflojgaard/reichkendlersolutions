@@ -1,15 +1,15 @@
-# Website Rescue
+# ReichkendlerSolutions
 
-En professionel hjemmeside for Website Rescue — et niche-webbureau der redder eksisterende hjemmesider fra at være "pæne men ubrugelige" og bygger nye fra bunden med fokus på konvertering.
+En professionel hjemmeside for ReichkendlerSolutions — et niche-webbureau der redder eksisterende hjemmesider fra at være "pæne men ubrugelige" og bygger nye fra bunden med fokus på konvertering.
 
 ## 🌐 Live Site
 
-**URL:** https://website-rescue.vercel.app (eller din domæne)
+**URL:** https://reichkendlersolutions.vercel.app (eller din domæne)
 
 ## 📁 Projektstruktur
 
 ```
-website-rescue-site/
+reichkendlersolutions-site/
 ├── src/
 │   ├── components/         # Reusable Astro components
 │   │   ├── ContactForm.astro      # EmailJS kontaktformular
@@ -61,14 +61,14 @@ For at opsætte auto-svar til kunder:
 ## 📝 Sider
 
 ### Forside (/)
-- Hero med "Website Rescue + Ny hjemmeside" budskab
+- Hero med "ReichkendlerSolutions + Ny hjemmeside" budskab
 - Problem-sektion (hvad der går galt)
 - Løsnings-sektion (hvad vi gør)
 - Proces-sektion (4 trin)
 - CTA til kontakt
 
 ### Priser (/priser)
-**Website Rescue:**
+**ReichkendlerSolutions:**
 - Starter: 7.500 kr (5 dage)
 - Pro: 14.500 kr (10 dage)
 
@@ -125,7 +125,7 @@ Udfyld skabelonen med kundens info, så kan vi gå direkte i gang med kodning.
 
 ## 🎯 Services
 
-### Website Rescue
+### ReichkendlerSolutions
 For virksomheder med eksisterende hjemmeside der ikke performer:
 - Redesign af forsiden + undersider
 - CTA-optimering
