@@ -1,4 +1,4 @@
-# Projekt Brief: Website Rescue — Pro Pakke
+# Projekt Brief: ReichkendlerSolutions — Pro Pakke
 
 ## Kunde Information
 - **Navn:** 
@@ -540,7 +540,7 @@ Jeg bekræfter at:
 
 ---
 
-### Nikolaj Fløjgaard / Website Rescue
+### Nikolaj Fløjgaard / ReichkendlerSolutions
 Jeg bekræfter at:
 - [ ] Brief er modtaget
 - [ ] Projekt er accepteret

@@ -1,4 +1,4 @@
-# Projekt Brief: Website Rescue — Basis Pakke
+# Projekt Brief: ReichkendlerSolutions — Basis Pakke
 
 ## Kunde Information
 - **Navn:** 
@@ -278,7 +278,7 @@ Websites du kan lide:
 
 ---
 
-**Nikolaj Fløjgaard / Website Rescue:**
+**Nikolaj Fløjgaard / ReichkendlerSolutions:**
 - [ ] Brief modtaget
 - [ ] Audit klar
 - [ ] Projekt accepteret

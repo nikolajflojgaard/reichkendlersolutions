@@ -22,9 +22,9 @@ EmailJS giver dig 200 emails/md gratis med auto-svar funktionalitet.
 2. Klik "Create New Template"
 3. Sæt dette op:
 
-**Template Name:** `Website Rescue - Ny Henvendelse`
+**Template Name:** `ReichkendlerSolutions - Ny Henvendelse`
 
-**Subject:** `Ny henvendelse fra {{from_name}} - Website Rescue`
+**Subject:** `Ny henvendelse fra {{from_name}} - ReichkendlerSolutions`
 
 **Body:**
 ```
@@ -50,9 +50,9 @@ Du kan svare direkte på denne email.
 1. Klik "Create New Template" igen
 2. Sæt dette op:
 
-**Template Name:** `Website Rescue - Auto Svar`
+**Template Name:** `ReichkendlerSolutions - Auto Svar`
 
-**Subject:** `Vi har modtaget din henvendelse — Website Rescue`
+**Subject:** `Vi har modtaget din henvendelse — ReichkendlerSolutions`
 
 **Body:**
 ```
@@ -71,7 +71,7 @@ Har du spørgsmål indtil da, er du velkommen til at svare på denne email.
 
 Bedste hilsner,
 Nikolaj Fløjgaard
-Website Rescue
+ReichkendlerSolutions
 nikolaj_fl@hotmail.com
 ```
 

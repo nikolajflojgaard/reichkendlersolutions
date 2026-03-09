@@ -1,4 +1,4 @@
-# Gratis form-løsninger til Website Rescue
+# Gratis form-løsninger til ReichkendlerSolutions
 
 ## Option 1: EmailJS (Anbefalet - 200 emails/md gratis)
 

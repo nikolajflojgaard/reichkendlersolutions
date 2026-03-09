@@ -385,7 +385,7 @@ Yderligere bemærkninger, ideer, inspiration:
 
 ---
 
-**Nikolaj Fløjgaard / Website Rescue:**
+**Nikolaj Fløjgaard / ReichkendlerSolutions:**
 - [ ] Brief modtaget
 - [ ] Spørgsmål afklaret
 - [ ] Projekt accepteret

@@ -37,7 +37,7 @@ Jeg kan kontaktes på nikolaj_fl@hotmail.com eller [DIT TLF].
 
 Bedste hilsner
 Nikolaj Fløjgaard
-Website Rescue
+ReichkendlerSolutions
 ```
 
 ---
@@ -69,7 +69,7 @@ Vi kan også tage en uforpligtende snak på telefonen.
 
 Hilsen
 Nikolaj Fløjgaard
-Website Rescue
+ReichkendlerSolutions
 nikolaj_fl@hotmail.com
 ```
 
@@ -102,7 +102,7 @@ Skriv eller ring på [DIT TLF].
 
 Bedste hilsner
 Nikolaj
-Website Rescue
+ReichkendlerSolutions
 ```
 
 ---
@@ -168,7 +168,7 @@ Jeg kan kontaktes på nikolaj_fl@hotmail.com.
 
 Bedste hilsner
 Nikolaj Fløjgaard
-Website Rescue
+ReichkendlerSolutions
 ```
 
 ---

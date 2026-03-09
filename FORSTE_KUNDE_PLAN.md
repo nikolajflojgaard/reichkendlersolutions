@@ -1,4 +1,4 @@
-# Første Kunde Plan — Website Rescue
+# Første Kunde Plan — ReichkendlerSolutions
 
 ## Mål: Få 1 betalende kunde inden for 14 dage
 
@@ -139,7 +139,7 @@ Jeg kan kontaktes på nikolaj_fl@hotmail.com eller [TELEFON].
 
 Bedste hilsner
 Nikolaj Fløjgaard
-Website Rescue
+ReichkendlerSolutions
 ```
 
 ### 3.4 LinkedIn strategi

@@ -1,8 +1,8 @@
-# Email Templates — Website Rescue
+# Email Templates — ReichkendlerSolutions
 
 ## Auto-svar ved kontaktformular (instant)
 
-**Emne:** Vi har modtaget din henvendelse til Website Rescue
+**Emne:** Vi har modtaget din henvendelse til ReichkendlerSolutions
 
 **Body:**
 
@@ -27,7 +27,7 @@ Jeg vender tilbage snarest.
 
 Bedste hilsner,
 Nikolaj Fløjgaard
-Website Rescue
+ReichkendlerSolutions
 nikolaj_fl@hotmail.com
 ```
 
@@ -35,7 +35,7 @@ nikolaj_fl@hotmail.com
 
 ## Opfølgning efter 48 timer (hvis de ikke har svaret)
 
-**Emne:** Re: Din hjemmeside-audit fra Website Rescue
+**Emne:** Re: Din hjemmeside-audit fra ReichkendlerSolutions
 
 **Body:**
 
@@ -95,7 +95,7 @@ Skal vi tage en snak om det?
 
 Bedste hilsner,
 Nikolaj Fløjgaard
-Website Rescue
+ReichkendlerSolutions
 nikolaj_fl@hotmail.com
 ```
 
@@ -103,7 +103,7 @@ nikolaj_fl@hotmail.com
 
 ## "Ikke interesseret nu" breakup
 
-**Emne:** Sidste ping fra Website Rescue
+**Emne:** Sidste ping fra ReichkendlerSolutions
 
 **Body:**
 
@@ -124,7 +124,7 @@ Nikolaj
 
 ## Booking bekræftelse (Starter pakke)
 
-**Emne:** Bekræftet: Website Rescue Starter — {{website}}
+**Emne:** Bekræftet: ReichkendlerSolutions Starter — {{website}}
 
 **Body:**
 
@@ -165,7 +165,7 @@ Nikolaj
 
 ## Booking bekræftelse (Pro pakke)
 
-**Emne:** Bekræftet: Website Rescue Pro — {{website}}
+**Emne:** Bekræftet: ReichkendlerSolutions Pro — {{website}}
 
 **Body:**
 
@@ -208,7 +208,7 @@ Nikolaj
 
 ## Faktura sendt (påmindelse)
 
-**Emne:** Faktura til Website Rescue {{pakke}} — action påkrævet
+**Emne:** Faktura til ReichkendlerSolutions {{pakke}} — action påkrævet
 
 **Body:**
 
