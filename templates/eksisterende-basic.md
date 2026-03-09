@@ -88,7 +88,7 @@ https://
 
 ---
 
-## Mål med Rescue
+## Mål med opgraderingen
 
 ### Primært mål
 - [ ] Flere henvendelser

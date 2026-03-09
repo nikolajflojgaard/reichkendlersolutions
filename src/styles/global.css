@@ -184,7 +184,7 @@ html[data-theme="dark"] {
 }
 
 /* Ensure gradient text stays visible on card hover */
-.rescue-card:hover .gradient-text {
+.brand-card:hover .gradient-text {
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -202,32 +202,32 @@ html[data-theme="dark"] {
 }
 
 /* Card styles */
-.rescue-card {
+.brand-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 16px;
   transition: all 0.3s ease;
 }
 
-.rescue-card:hover {
+.brand-card:hover {
   border-color: var(--accent);
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(255, 87, 34, 0.15);
 }
 
-.rescue-card:hover h2,
-.rescue-card:hover h3,
-.rescue-card:hover p,
-.rescue-card:hover span,
-.rescue-card:hover li {
+.brand-card:hover h2,
+.brand-card:hover h3,
+.brand-card:hover p,
+.brand-card:hover span,
+.brand-card:hover li {
   color: var(--foreground);
 }
 
-.rescue-card:hover .text-muted {
+.brand-card:hover .text-muted {
   color: var(--muted);
 }
 
-.rescue-card:hover .gradient-text {
+.brand-card:hover .gradient-text {
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -235,7 +235,7 @@ html[data-theme="dark"] {
 }
 
 /* Button styles */
-.btn-rescue {
+.btn-primary {
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   color: white;
   font-weight: 700;
@@ -247,7 +247,7 @@ html[data-theme="dark"] {
   letter-spacing: 1px;
 }
 
-.btn-rescue:hover {
+.btn-primary:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 30px var(--accent-glow);
 }
