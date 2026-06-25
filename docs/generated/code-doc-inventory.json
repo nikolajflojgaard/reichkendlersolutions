@@ -1,0 +1,1123 @@
+{
+  "counts": {
+    "deployments": 1,
+    "entrypoints": 0,
+    "files": 135,
+    "flows": 0,
+    "frameworks": 1,
+    "interfaces": 7,
+    "manifests": 2,
+    "routes": 0
+  },
+  "deployments": [
+    {
+      "path": ".github/workflows/simply-deploy.yml",
+      "size": 1074,
+      "suffix": ".yml",
+      "tags": [
+        "deployment"
+      ]
+    }
+  ],
+  "entrypoints": [],
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 510,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": "EMAILJS_SETUP.md",
+      "size": 2919,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "EMAIL_SKABELONER.md",
+      "size": 5100,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "FORM_OPTIONS.md",
+      "size": 1546,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "FORSTE_KUNDE_PLAN.md",
+      "size": 6801,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "KANDIDAT_LISTE_GUIDE.md",
+      "size": 4586,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "README.md",
+      "size": 4630,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "astro.config.mjs",
+      "size": 6493,
+      "suffix": ".mjs",
+      "tags": [
+        "config"
+      ]
+    },
+    {
+      "path": "biome.json",
+      "size": 1351,
+      "suffix": ".json",
+      "tags": [
+        "config"
+      ]
+    },
+    {
+      "path": "code-docs.yml",
+      "size": 287,
+      "suffix": ".yml",
+      "tags": []
+    },
+    {
+      "path": "jsconfig.json",
+      "size": 95,
+      "suffix": ".json",
+      "tags": []
+    },
+    {
+      "path": "package-lock.json",
+      "size": 582081,
+      "suffix": ".json",
+      "tags": [
+        "manifest"
+      ]
+    },
+    {
+      "path": "package.json",
+      "size": 2290,
+      "suffix": ".json",
+      "tags": [
+        "manifest"
+      ]
+    },
+    {
+      "path": "tsconfig.json",
+      "size": 231,
+      "suffix": ".json",
+      "tags": [
+        "config"
+      ]
+    },
+    {
+      "path": "vercel.json",
+      "size": 5004,
+      "suffix": ".json",
+      "tags": []
+    },
+    {
+      "path": ".github/workflows/code-docs.yml",
+      "size": 583,
+      "suffix": ".yml",
+      "tags": []
+    },
+    {
+      "path": ".github/workflows/simply-deploy.yml",
+      "size": 1074,
+      "suffix": ".yml",
+      "tags": [
+        "deployment"
+      ]
+    },
+    {
+      "path": ".husky/_/.gitignore",
+      "size": 1,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/applypatch-msg",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/commit-msg",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/h",
+      "size": 551,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/husky.sh",
+      "size": 160,
+      "suffix": ".sh",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-applypatch",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-checkout",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-commit",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-merge",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-rewrite",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-applypatch",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-auto-gc",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-commit",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-merge-commit",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-push",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-rebase",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/prepare-commit-msg",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": "public/about.png",
+      "size": 1351215,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "size": 2582,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/avatar.jpg",
+      "size": 103370,
+      "suffix": ".jpg",
+      "tags": []
+    },
+    {
+      "path": "public/favicon-16.png",
+      "size": 360,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/favicon-32.png",
+      "size": 576,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/favicon-48.png",
+      "size": 786,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/favicon.ico",
+      "size": 2991,
+      "suffix": ".ico",
+      "tags": []
+    },
+    {
+      "path": "public/favicon.svg",
+      "size": 417,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "public/hero.png",
+      "size": 1280599,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/manifest.webmanifest",
+      "size": 621,
+      "suffix": ".webmanifest",
+      "tags": []
+    },
+    {
+      "path": "public/robots.txt",
+      "size": 73,
+      "suffix": ".txt",
+      "tags": []
+    },
+    {
+      "path": "public/sitemap.xml",
+      "size": 935,
+      "suffix": ".xml",
+      "tags": []
+    },
+    {
+      "path": "public/toggle-theme.js",
+      "size": 3419,
+      "suffix": ".js",
+      "tags": []
+    },
+    {
+      "path": "public/fonts/atkinson-bold.woff",
+      "size": 23780,
+      "suffix": ".woff",
+      "tags": []
+    },
+    {
+      "path": "public/fonts/atkinson-regular.woff",
+      "size": 22792,
+      "suffix": ".woff",
+      "tags": []
+    },
+    {
+      "path": "public/resume/nikolaj-flojgaard-cv.pdf",
+      "size": 65575,
+      "suffix": ".pdf",
+      "tags": []
+    },
+    {
+      "path": "scripts/release.sh",
+      "size": 763,
+      "suffix": ".sh",
+      "tags": []
+    },
+    {
+      "path": "src/config.ts",
+      "size": 162,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/constants.ts",
+      "size": 1773,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/consts.ts",
+      "size": 2132,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/content.config.ts",
+      "size": 1072,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/env.d.ts",
+      "size": 145,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/middleware.js",
+      "size": 415,
+      "suffix": ".js",
+      "tags": []
+    },
+    {
+      "path": "src/types.d.ts",
+      "size": 210,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconArchive.svg",
+      "size": 484,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconArrowLeft.svg",
+      "size": 385,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconArrowRight.svg",
+      "size": 387,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconBrandX.svg",
+      "size": 415,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconCalendar.svg",
+      "size": 658,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconChevronLeft.svg",
+      "size": 346,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconChevronRight.svg",
+      "size": 346,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconEdit.svg",
+      "size": 487,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconFacebook.svg",
+      "size": 406,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconGitHub.svg",
+      "size": 624,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconHash.svg",
+      "size": 404,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconLinkedin.svg",
+      "size": 509,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconMail.svg",
+      "size": 429,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconMenuDeep.svg",
+      "size": 379,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconMoon.svg",
+      "size": 402,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconPinterest.svg",
+      "size": 493,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconRss.svg",
+      "size": 429,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconSearch.svg",
+      "size": 393,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconSunHigh.svg",
+      "size": 629,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconTelegram.svg",
+      "size": 374,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconWhatsapp.svg",
+      "size": 484,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconX.svg",
+      "size": 356,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/images/AstroPaper-v3.png",
+      "size": 173038,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "src/assets/images/AstroPaper-v4.png",
+      "size": 161586,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "src/assets/images/AstroPaper-v5.png",
+      "size": 178043,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "src/assets/images/forrest-gump-quote.png",
+      "size": 281244,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "src/components/Analytics.astro",
+      "size": 490,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/BackButton.astro",
+      "size": 916,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Card.astro",
+      "size": 2004,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/ContactForm.astro",
+      "size": 9954,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Datetime.astro",
+      "size": 1430,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/EditPost.astro",
+      "size": 966,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Footer.astro",
+      "size": 471,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/FormattedDate.astro",
+      "size": 240,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Header.astro",
+      "size": 3897,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Hr.astro",
+      "size": 274,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Link.astro",
+      "size": 502,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/LinkButton.astro",
+      "size": 617,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Logo.astro",
+      "size": 1473,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Pagination.astro",
+      "size": 1094,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/ShareLinks.astro",
+      "size": 1542,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Socials.astro",
+      "size": 1202,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/StructuredData.astro",
+      "size": 2214,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Tag.astro",
+      "size": 821,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/TwitterEmbed.astro",
+      "size": 495,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/AboutLayout.astro",
+      "size": 707,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/BlogPostLayout.astro",
+      "size": 12526,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/Layout.astro",
+      "size": 4919,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/Main.astro",
+      "size": 1178,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/PostDetails.astro",
+      "size": 15656,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/pages/index.astro",
+      "size": 18560,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/kontakt.astro",
+      "size": 5728,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/om.astro",
+      "size": 8599,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/priser.astro",
+      "size": 19330,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/robots.txt.ts",
+      "size": 294,
+      "suffix": ".ts",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/rss.xml.ts",
+      "size": 699,
+      "suffix": ".ts",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/tak.astro",
+      "size": 1817,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/styles/global.css",
+      "size": 7435,
+      "suffix": ".css",
+      "tags": []
+    },
+    {
+      "path": "src/styles/typography.css",
+      "size": 2795,
+      "suffix": ".css",
+      "tags": []
+    },
+    {
+      "path": "src/utils/generateOgImages.ts",
+      "size": 608,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getPath.ts",
+      "size": 1267,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getPostsByGroupCondition.ts",
+      "size": 640,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getPostsByTag.ts",
+      "size": 330,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getSortedPosts.ts",
+      "size": 443,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getUniqueTags.ts",
+      "size": 604,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/loadGoogleFont.ts",
+      "size": 1450,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/postFilter.ts",
+      "size": 379,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/readingTime.ts",
+      "size": 598,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/remarkLazyLoadImages.mjs",
+      "size": 297,
+      "suffix": ".mjs",
+      "tags": []
+    },
+    {
+      "path": "src/utils/slugify.ts",
+      "size": 183,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/og-templates/post.js",
+      "size": 7094,
+      "suffix": ".js",
+      "tags": []
+    },
+    {
+      "path": "src/utils/og-templates/site.js",
+      "size": 3948,
+      "suffix": ".js",
+      "tags": []
+    },
+    {
+      "path": "templates/eksisterende-basic.md",
+      "size": 4620,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "templates/eksisterende-pro.md",
+      "size": 9490,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "templates/email-templates.md",
+      "size": 5016,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "templates/ny-hjemmeside-basic.md",
+      "size": 2637,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "templates/ny-hjemmeside-pro.md",
+      "size": 6888,
+      "suffix": ".md",
+      "tags": []
+    }
+  ],
+  "flows": [],
+  "frameworks": [
+    {
+      "name": "Astro",
+      "source": "package.json"
+    }
+  ],
+  "interfaces": [
+    {
+      "path": "src/pages/index.astro",
+      "size": 18560,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/kontakt.astro",
+      "size": 5728,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/om.astro",
+      "size": 8599,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/priser.astro",
+      "size": 19330,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/robots.txt.ts",
+      "size": 294,
+      "suffix": ".ts",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/rss.xml.ts",
+      "size": 699,
+      "suffix": ".ts",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/tak.astro",
+      "size": 1817,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    }
+  ],
+  "manifests": [
+    {
+      "path": "package-lock.json",
+      "size": 582081,
+      "suffix": ".json",
+      "tags": [
+        "manifest"
+      ]
+    },
+    {
+      "path": "package.json",
+      "size": 2290,
+      "suffix": ".json",
+      "tags": [
+        "manifest"
+      ]
+    }
+  ],
+  "repo": "reichkendlersolutions",
+  "root": ".",
+  "routes": [],
+  "tree": {
+    ".github": {
+      "workflows": {
+        "code-docs.yml": null,
+        "simply-deploy.yml": null
+      }
+    },
+    ".gitignore": null,
+    ".husky": {
+      "_": {
+        ".gitignore": null,
+        "applypatch-msg": null,
+        "commit-msg": null,
+        "h": null,
+        "husky.sh": null,
+        "post-applypatch": null,
+        "post-checkout": null,
+        "post-commit": null,
+        "post-merge": null,
+        "post-rewrite": null,
+        "pre-applypatch": null,
+        "pre-auto-gc": null,
+        "pre-commit": null,
+        "pre-merge-commit": null,
+        "pre-push": null,
+        "pre-rebase": null,
+        "prepare-commit-msg": null
+      }
+    },
+    "EMAILJS_SETUP.md": null,
+    "EMAIL_SKABELONER.md": null,
+    "FORM_OPTIONS.md": null,
+    "FORSTE_KUNDE_PLAN.md": null,
+    "KANDIDAT_LISTE_GUIDE.md": null,
+    "README.md": null,
+    "astro.config.mjs": null,
+    "biome.json": null,
+    "code-docs.yml": null,
+    "jsconfig.json": null,
+    "package-lock.json": null,
+    "package.json": null,
+    "public": {
+      "about.png": null,
+      "apple-touch-icon.png": null,
+      "avatar.jpg": null,
+      "favicon-16.png": null,
+      "favicon-32.png": null,
+      "favicon-48.png": null,
+      "favicon.ico": null,
+      "favicon.svg": null,
+      "fonts": {
+        "atkinson-bold.woff": null,
+        "atkinson-regular.woff": null
+      },
+      "hero.png": null,
+      "manifest.webmanifest": null,
+      "resume": {
+        "nikolaj-flojgaard-cv.pdf": null
+      },
+      "robots.txt": null,
+      "sitemap.xml": null,
+      "toggle-theme.js": null
+    },
+    "scripts": {
+      "release.sh": null
+    },
+    "src": {
+      "assets": {
+        "icons": {
+          "IconArchive.svg": null,
+          "IconArrowLeft.svg": null,
+          "IconArrowRight.svg": null,
+          "IconBrandX.svg": null,
+          "IconCalendar.svg": null,
+          "IconChevronLeft.svg": null,
+          "IconChevronRight.svg": null,
+          "IconEdit.svg": null,
+          "IconFacebook.svg": null,
+          "IconGitHub.svg": null,
+          "IconHash.svg": null,
+          "IconLinkedin.svg": null,
+          "IconMail.svg": null,
+          "IconMenuDeep.svg": null,
+          "IconMoon.svg": null,
+          "IconPinterest.svg": null,
+          "IconRss.svg": null,
+          "IconSearch.svg": null,
+          "IconSunHigh.svg": null,
+          "IconTelegram.svg": null,
+          "IconWhatsapp.svg": null,
+          "IconX.svg": null
+        },
+        "images": {
+          "AstroPaper-v3.png": null,
+          "AstroPaper-v4.png": null,
+          "AstroPaper-v5.png": null,
+          "forrest-gump-quote.png": null
+        }
+      },
+      "components": {
+        "Analytics.astro": null,
+        "BackButton.astro": null,
+        "Card.astro": null,
+        "ContactForm.astro": null,
+        "Datetime.astro": null,
+        "EditPost.astro": null,
+        "Footer.astro": null,
+        "FormattedDate.astro": null,
+        "Header.astro": null,
+        "Hr.astro": null,
+        "Link.astro": null,
+        "LinkButton.astro": null,
+        "Logo.astro": null,
+        "Pagination.astro": null,
+        "ShareLinks.astro": null,
+        "Socials.astro": null,
+        "StructuredData.astro": null,
+        "Tag.astro": null,
+        "TwitterEmbed.astro": null
+      },
+      "config.ts": null,
+      "constants.ts": null,
+      "consts.ts": null,
+      "content.config.ts": null,
+      "env.d.ts": null,
+      "layouts": {
+        "AboutLayout.astro": null,
+        "BlogPostLayout.astro": null,
+        "Layout.astro": null,
+        "Main.astro": null,
+        "PostDetails.astro": null
+      },
+      "middleware.js": null,
+      "pages": {
+        "index.astro": null,
+        "kontakt.astro": null,
+        "om.astro": null,
+        "priser.astro": null,
+        "robots.txt.ts": null,
+        "rss.xml.ts": null,
+        "tak.astro": null
+      },
+      "styles": {
+        "global.css": null,
+        "typography.css": null
+      },
+      "types.d.ts": null,
+      "utils": {
+        "generateOgImages.ts": null,
+        "getPath.ts": null,
+        "getPostsByGroupCondition.ts": null,
+        "getPostsByTag.ts": null,
+        "getSortedPosts.ts": null,
+        "getUniqueTags.ts": null,
+        "loadGoogleFont.ts": null,
+        "og-templates": {
+          "post.js": null,
+          "site.js": null
+        },
+        "postFilter.ts": null,
+        "readingTime.ts": null,
+        "remarkLazyLoadImages.mjs": null,
+        "slugify.ts": null
+      }
+    },
+    "templates": {
+      "eksisterende-basic.md": null,
+      "eksisterende-pro.md": null,
+      "email-templates.md": null,
+      "ny-hjemmeside-basic.md": null,
+      "ny-hjemmeside-pro.md": null
+    },
+    "tsconfig.json": null,
+    "vercel.json": null
+  },
+  "truncated": false
+}

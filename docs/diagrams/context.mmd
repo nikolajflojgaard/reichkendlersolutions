@@ -1,0 +1,8 @@
+flowchart LR
+  Developer[Developer or operator]
+  System[reichkendlersolutions]
+  Consumer[API or UI consumer]
+  Consumer -->|uses| System
+  Runtime[Runtime or hosting platform]
+  System -->|deploys to| Runtime
+  Developer -->|changes and operates| System
