@@ -7,7 +7,7 @@
 - Service: `reichkendlersolutions`
 - Repository: `reichkendlersolutions`
 - Owner: `Nikolaj Flojgaard`
-- Files inventoried: `135`
+- Files inventoried: `118`
 - Manifests: `2`
 - Frameworks detected: `1`
 - Routes detected: `0`

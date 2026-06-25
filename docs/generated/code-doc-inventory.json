@@ -2,7 +2,7 @@
   "counts": {
     "deployments": 1,
     "entrypoints": 0,
-    "files": 135,
+    "files": 118,
     "flows": 0,
     "frameworks": 1,
     "interfaces": 7,
@@ -81,7 +81,7 @@
     },
     {
       "path": "code-docs.yml",
-      "size": 287,
+      "size": 326,
       "suffix": ".yml",
       "tags": []
     },
@@ -134,108 +134,6 @@
       "tags": [
         "deployment"
       ]
-    },
-    {
-      "path": ".husky/_/.gitignore",
-      "size": 1,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/applypatch-msg",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/commit-msg",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/h",
-      "size": 551,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/husky.sh",
-      "size": 160,
-      "suffix": ".sh",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/post-applypatch",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/post-checkout",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/post-commit",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/post-merge",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/post-rewrite",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/pre-applypatch",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/pre-auto-gc",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/pre-commit",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/pre-merge-commit",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/pre-push",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/pre-rebase",
-      "size": 39,
-      "suffix": "",
-      "tags": []
-    },
-    {
-      "path": ".husky/_/prepare-commit-msg",
-      "size": 39,
-      "suffix": "",
-      "tags": []
     },
     {
       "path": "public/about.png",
@@ -952,27 +850,6 @@
       }
     },
     ".gitignore": null,
-    ".husky": {
-      "_": {
-        ".gitignore": null,
-        "applypatch-msg": null,
-        "commit-msg": null,
-        "h": null,
-        "husky.sh": null,
-        "post-applypatch": null,
-        "post-checkout": null,
-        "post-commit": null,
-        "post-merge": null,
-        "post-rewrite": null,
-        "pre-applypatch": null,
-        "pre-auto-gc": null,
-        "pre-commit": null,
-        "pre-merge-commit": null,
-        "pre-push": null,
-        "pre-rebase": null,
-        "prepare-commit-msg": null
-      }
-    },
     "EMAILJS_SETUP.md": null,
     "EMAIL_SKABELONER.md": null,
     "FORM_OPTIONS.md": null,
